@@ -1,152 +1,126 @@
-🎟️ TicketBari – Online Ticket Booking Platform
-📌 Project Overview
+# 🎟️ TicketBari — Online Ticket Booking Platform
 
-TicketBari is a full-stack Online Ticket Booking Platform built using the MERN stack. The platform allows users to discover and book travel tickets (Bus, Train, Launch, Plane), while vendors can manage tickets and bookings, and admins control approvals, advertisements, and user roles.
+## 📌 Project Overview
 
-The system is role-based with User, Vendor, and Admin dashboards and includes secure authentication, real-time booking workflows, and online payments.
+**TicketBari** is a full-stack **Online Ticket Booking Platform** built using the **MERN stack**. The application enables users to discover and book travel tickets (Bus, Train, Launch, Plane), while vendors manage ticket listings and bookings, and administrators oversee approvals, advertisements, and user roles.
 
-🌐 Live Website
+The system is fully **role-based** (User, Vendor, Admin) and includes secure authentication, real-time booking workflows, and online payment integration.
 
-👉 Live URL: https://your-live-site-link.com
+---
 
-👉 Server URL: https://your-server-link.com
+## 🌐 Live Links
 
-🚀 Key Features
-🔐 Authentication
+- **Live Website:** https://your-live-site-link.com  
+- **Server API:** https://your-server-link.com  
 
-Email & Password login and registration
+---
 
-Google Social Login
+## 🚀 Key Features
 
-Password validation (uppercase, lowercase, min 6 characters)
+### 🔐 Authentication & Authorization
+- Email & Password registration and login
+- Google social login
+- Password validation (uppercase, lowercase, minimum 6 characters)
+- Role-based protected routes
+- Persistent login on page reload
+- Firebase authentication secured with environment variables
 
-Protected routes with persistent login on reload
+---
 
-Firebase authentication secured with environment variables
+### 🏠 Home Page
+- Hero banner / slider
+- Advertisement section (maximum 6 admin-selected tickets)
+- Latest tickets showcase
+- Informative sections (Why Choose Us, Popular Routes, etc.)
+- Fully responsive design (mobile, tablet, desktop)
 
-🏠 Home Page
+---
 
-Hero banner / slider
+### 🎫 All Tickets Page
+- Displays admin-approved tickets only
+- Search tickets by route (From → To)
+- Filter by transport type
+- Pagination for optimized performance
+- Navigation to detailed ticket view
 
-Advertisement Section (max 6 admin-selected tickets)
+---
 
-Latest Tickets Section
+### 📄 Ticket Details (Protected)
+- Complete ticket information
+- Real-time countdown based on departure date & time
+- “Book Now” modal with quantity validation
+- Booking disabled automatically for expired or sold-out tickets
 
-Extra informative sections (e.g., Why Choose Us, Popular Routes)
+---
 
-Responsive design for all devices
+## 📊 Dashboard System
 
-🎫 All Tickets Page
+### 👤 User Dashboard
+- User profile management
+- View booked tickets
+- Booking status: pending / accepted / rejected / paid
+- Stripe payment integration
+- Departure countdown
+- Transaction history
 
-Shows admin-approved tickets only
+---
 
-Search by route (From → To)
+### 🧑‍💼 Vendor Dashboard
+- Vendor profile
+- Add tickets (image upload via imgbb)
+- Manage added tickets (update / delete)
+- Handle booking requests (accept / reject)
+- Revenue overview with charts
 
-Filter by transport type
+---
 
-Pagination for better performance
+### 🛡️ Admin Dashboard
+- Admin profile
+- Approve or reject tickets
+- Manage users (assign admin/vendor roles, mark fraud)
+- Control advertisements (maximum 6 active tickets)
+- Automatic hiding of tickets from fraud vendors
 
-Ticket details navigation
+---
 
-📄 Ticket Details (Protected)
+### 💳 Payment System
+- Secure Stripe payment integration
+- Automatic ticket quantity reduction after successful payment
+- Payment and transaction history tracking
 
-Full ticket information
+---
 
-Countdown based on departure date & time
+## 🛠️ Technologies Used
 
-“Book Now” modal with quantity validation
-
-Auto-disable booking for expired or sold-out tickets
-
-📊 Dashboard System
-👤 User Dashboard
-
-User Profile
-
-My Booked Tickets
-
-Booking status: pending / accepted / rejected / paid
-
-Stripe payment integration
-
-Countdown for departure
-
-Transaction History (Stripe payments)
-
-🧑‍💼 Vendor Dashboard
-
-Vendor Profile
-
-Add Ticket (with image upload via imgbb)
-
-My Added Tickets (update/delete)
-
-Requested Bookings (accept/reject)
-
-Revenue Overview with charts
-
-🛡️ Admin Dashboard
-
-Admin Profile
-
-Manage Tickets (approve/reject)
-
-Manage Users (make admin/vendor, mark fraud)
-
-Advertise Tickets (max 6 at a time)
-
-Fraud vendors’ tickets are hidden automatically
-
-💳 Payment System
-
-Secure Stripe payment integration
-
-Automatic ticket quantity reduction after payment
-
-Transaction history tracking
-
-🛠️ Technologies Used
-🔵 Frontend
-
-React 19
-
-React Router
-
-TanStack React Query
-
-Axios
-
-Firebase Authentication
-
-Tailwind CSS + DaisyUI
-
-Swiper & React Responsive Carousel
-
-React Hook Form
-
-SweetAlert2 & React Hot Toast
-
-Recharts
-
-Lucide Icons
-
-🟢 Backend
-
-Node.js
-
-Express.js
-
-MongoDB
-
-Firebase Admin SDK
-
-Stripe
-
-dotenv
-
-CORS
-
-📦 Client Dependencies
+### 🔵 Frontend
+- React 19
+- React Router
+- TanStack React Query
+- Axios
+- Firebase Authentication
+- Tailwind CSS & DaisyUI
+- Swiper & React Responsive Carousel
+- React Hook Form
+- SweetAlert2 & React Hot Toast
+- Recharts
+- Lucide Icons
+
+---
+
+### 🟢 Backend
+- Node.js
+- Express.js
+- MongoDB
+- Firebase Admin SDK
+- Stripe
+- dotenv
+- CORS
+
+---
+
+## 📦 Dependencies
+
+### Client
 @tanstack/react-query
 axios
 firebase
@@ -160,7 +134,8 @@ recharts
 sweetalert2
 react-hot-toast
 
-📦 Server Dependencies
+📦 Dependencies
+### Server
 express
 mongodb
 cors
