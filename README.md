@@ -10,8 +10,8 @@ The system is fully **role-based** (User, Vendor, Admin) and includes secure aut
 
 ## 🌐 Live Links
 
-- **Live Website:** https://your-live-site-link.com  
-- **Server API:** https://your-server-link.com  
+- **Live Website:** [https://your-live-site-link.com ](https://trip-hub-12f28.web.app/) 
+- **Server API:** [https://your-server-link.com ](https://github.com/00Shawon/trip-hub-server) 
 
 ---
 
